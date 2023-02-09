@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    background:#c7e6b2;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 230px;
+    top: -30px;  
+}
+
+.rows {
+  transform: translateY(10%);
+  position: relative;
+  left: 3%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.card {
+  position: relative;
+  background-color: #9dce7d;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10%;
+  transition: all 0.3s;
+  margin: 20px;
+}
+
+.card img {
+  background-color: transparent;
+  position: relative;
+  top: 15%;
+  left: 10%;
+  width: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.2);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.card-content  p {
+  background-color: transparent;
+  font-size: small;
+}
+.card-content b  {
+  background-color: transparent;
+  
+}
+
+.card-content h2 {
+  background-color: transparent;
+  position: relative;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px);
+}
+
+.card-content {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+
+.card:hover .card-content {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}

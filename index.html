@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>LandingPage</title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <div>
+                <img src="image/landingpage/logo.png" alt="logo" class="logo">
+            </div>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Selamat Datang Di<br>
+                    Situs Web <span> Healty Food </span></h2>
+                <p> yang didedikasikan untuk memberikan informasi mengenai makanan sehat dan bergizi. <br />
+                    Kami memahami pentingnya makan sehat dalam hidup, dan kami ingin membantu Anda
+                    menemukan informasi yang Anda butuhkan untuk membuat pilihan makan yang tepat. <br />
+                </p>
+                <a href="tentang.html">Selengkapnya...</a>
+                
+            </div>
+            <div class="slider">
+                <input type="radio" name="radio" class="pilih1">
+                <input type="radio" name="radio" class="pilih2">
+                <input type="radio" name="radio" class="pilih3">
+                <div class="slides">
+                    <img src="image/landingpage/slide1.png" alt="" class="slide">
+                    <img src="image/landingpage/slide2.png" alt="" class="slide">
+                    <img src="image/landingpage/slide3.png" alt=""class="slide">
+                </div>
+            </div>
+        </div>
+        <div class="left">
+            <div class="box">
+                <div class="menu">
+                    <a href="sayur.html" class="pilih">
+                        <img src="image/landingpage/sayur.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="menu">
+                    <a href="buah.html" class="pilih">
+                        <img src="image/landingpage/buah.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="menu">
+                    <a href="bean.html" class="pilih">
+                        <img src="image/landingpage/kacang.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="menu">
+                    <a href="protein.html" class="pilih">
+                        <img src="image/landingpage/daging.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="medsos">
+                <a href="https://instagram.com/_wildanmjjhd?igshid=YmMyMTA2M2Y=">
+                    <img src="image/landingpage/instagram.png" alt="">
+                </a>
+                <a href="https://www.facebook.com/wildan.mujjahidrobbani">
+                    <img src="image/landingpage/facebook.png" alt="">
+                </a>
+                <a href="">
+                    <img src="image/landingpage/twitter.png" alt="">
+                </a>
+                <a href="mailto:mujjahidrobbani29@gmail.com">
+                    <img src="image/landingpage/email.png" alt="">
+                </a>
+            </div>
+    </section>
+    <script type="text/javascript">
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); //mengatur durasi pergantian slide (dalam milisecond)
+        }
+    </script>
+</body>
+
+</html>
